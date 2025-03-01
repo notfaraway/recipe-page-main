@@ -42,29 +42,58 @@
       }
       .div-1 {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         min-height: 80vh;
         width: 70%;
         border-style: solid;
         border-color: white;
+        border-radius: 20px;
+        background-color: white;
       }
+
       .omelette-image {
         width: 100%;
         max-width: 1000px;
         margin-top: 20px;
         border-radius: 20px;
       }
+      .div-2 {
+        width: 94%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      .title {
+        margin: 0;
+        font-size: 65px;
+        color: var(--titlecolor);
+      }
+      .div-3 {
+        margin: 0;
+        width: 94%;
+      }
+      .bio {
+        margin: 0;
+      }
     </style>
   </head>
   <body>
     <div class="div-0">
       <div class="div-1">
-        <img
-          class="omelette-image"
-          alt="omelette-image"
-          src="./assets/images/image-omelette.jpeg"
-        />
+        <img class="omelette-image" alt="omelette-image"
+        src="./assets/images/image-omelette.jpeg"
+      </div>
+      <div class="div-2"><p class="title">Simple Omelette Recipe</p></div>
+      <div class="div-3">
+        <p class="bio">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
       </div>
     </div>
 
