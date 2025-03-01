@@ -19,6 +19,8 @@
       :root {
         --backgroundcolor: hsl(30, 54%, 90%);
         --titlecolor: hsl(24, 5%, 18%);
+        --textcolor: hsl(30, 10%, 34%);
+        --listcolor: hsl(330, 100%, 98%);
       }
       body {
         height: 100%;
@@ -78,6 +80,21 @@
       }
       .bio {
         margin: 0;
+        color: var(--textcolor);
+        font-size: 23px;
+      }
+      .div-4 {
+        margin-top: 40px;
+        background-color: var(--listcolor);
+        width: 94%;
+        text-align: left;
+        border-radius: 20px;
+      }
+      .div-4 p {
+        margin-bottom: 20px;
+      }
+      .div-4 li {
+        margin-top: 15px;
       }
     </style>
   </head>
@@ -94,6 +111,22 @@
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
+      </div>
+      <div class="div-4">
+        <p>Preparation time</p>
+        <li>Approximately 10 minutes</li>
+        <li>Preparation: 5 minutes</li>
+        <li>Cooking: 5 minutes</li>
+      </div>
+      <div class="div-5">
+        <p>Ingredients</p>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>
+          Optional fillings: cheese, diced vegetables, cooked meats, herbs
+        </li>
       </div>
     </div>
 
