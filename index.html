@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Recipe page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,6 +33,7 @@
         height: 100%;
         margin: 0;
         background-color: var(--backgroundcolor);
+        font-family: "Outfit", sans-serif;
       }
       .attribution {
         font-size: 11px;
@@ -42,19 +48,20 @@
         align-items: center;
         min-height: 100vh;
         width: 100%;
-        border-style: solid;
       }
       .div-1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 80vh;
+        min-height: 100vh;
         width: 70%;
         border-style: solid;
         border-color: white;
         border-radius: 20px;
         background-color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
 
       .omelette-image {
@@ -163,8 +170,28 @@
         color: var(--ingredientcolor);
       }
       .div-7 table {
-        margin-left: 50px;
-        width: 60%;
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        unicode-bidi: isolate;
+        border-spacing: 20px;
+        border-color: gray;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      th,
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: left;
+        color: var(--textcolor);
+      }
+      td {
+        display: table-cell;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
       }
     </style>
   </head>
@@ -245,15 +272,17 @@
             <td>277kcal</td>
           </tr>
 
-          <tr>
+          <tr class="bordertop">
             <th>Carbs</th>
             <td>0g</td>
           </tr>
-          <tr>
+
+          <tr class="bordertop">
             <th>Protein</th>
             <td>20g</td>
           </tr>
-          <tr>
+
+          <tr class="bordertop">
             <th>Fat</th>
             <td>22g</td>
           </tr>
